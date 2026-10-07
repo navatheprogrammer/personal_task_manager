@@ -1,4 +1,12 @@
 name = input("hello may i know your name: ")
 print("omg hi welcome", name)
-task = input("what tasks are you herer for you may enter multiple tasks?: ")
-print("your tax is", task)
+
+from tasks import task
+
+for i in task:
+    awnser_task = i["task"]
+
+my_task = input(awnser_task)
+print(f"{name} your task is {my_task}")
+
+
