@@ -14,12 +14,15 @@ while True:
         else:
             print("oops wrong password")
             a = input("do you want to exit admin mode? yes/no: ")
-            continue
-    if a == "yes":
-        print("ok you have left admin mode")
-        break
 
-    
+            if a.lower() == "yes":
+                print("ok you have left admin mode")
+                break
+
+            continue
+                
+
+
 
 
 name = input("hello may i know your name: ")
@@ -29,8 +32,10 @@ for i in task:
     awnser_task = i["task"]
 
 my_task = input(awnser_task)
-print(f"{name} your task is {my_task}")
+priority = input("what do you want your pririty to be? High/Medium/Low: ")
+
+print(f"{name} your task is {my_task} you priority is {priority}")
 
 
 with open ("tasks.txt", "a") as task_awnser:
-    task_awnser.write(f"{name} your task is {my_task}\n")
+    task_awnser.write(f"{name} your task is {my_task} your priority is {priority}\n")
