@@ -32,10 +32,10 @@ for i in task:
     awnser_task = i["task"]
 
 my_task = input(awnser_task)
-priority = input("what do you want your pririty to be? High/Medium/Low: ")
+priority_manager = input("what do you want your pririty to be? High/Medium/Low: ")
 
-print(f"{name} your task is {my_task} you priority is {priority}")
+print(f"{name} your task is {my_task} you priority is {priority_manager}")
 
 
 with open ("tasks.txt", "a") as task_awnser:
-    task_awnser.write(f"{name} your task is {my_task} your priority is {priority}\n")
+    task_awnser.write(f"{name} your task is {my_task} your priority is {priority_manager}\n")
