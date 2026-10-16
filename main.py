@@ -1,0 +1,5 @@
+name = input(" hello may i know your name pls: ")
+print("omg its the baddie welcome baddie  ", name)
+task = input("enter a task pls: ")
+print("your task is", task )
+print("bye")
