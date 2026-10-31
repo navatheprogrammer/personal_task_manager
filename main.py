@@ -17,7 +17,6 @@ if admin == "yes":
 
 
 
-
 tasks = load_tasks()
 count = int(input("how many tasks do you want to add?: "))
 
