@@ -1,29 +1,32 @@
 from tasks import show_tasks, save_tasks, load_tasks
-from dotenv import load_dotenv
+from dotenv import load_dotenv 
 import os 
 
+load_dotenv()
 
 
+name = input("enter your name: ")
+print("welcome", name)
 
-name = input(" hello may i know your name pls: ")
-print("welcome to my project  ", name)
-admin = input("do you want to enter adin mode? yes/no: ")
-if admin == "yes":
-    password = input("enter admin password: ")
-    if password == os.getenv("admin_password"):
-        print("admin mode has been activated")
+admin_mod = input("do you want admin mod? yes/no: ")
+if admin_mod == "yes":
+    password = input("enter admin password : ")
+    if password == os.getenv("admin_pass"):
+        print("admin mod is on ")
     else:
-        print("oops! wrong password")
-
-
-
+        print("wrong password")
 tasks = load_tasks()
-count = int(input("how many tasks do you want to add?: "))
+how_many = int(input("how many task do you want to do ? : "))
 
-for i in range(count):
-    task = input("enter a task pls: ")
+for i in range(how_many):
+    task_name = input("enter a task: ")
+    priority = input("enter a priority (low,medium high) : ").lower()
+    task = {
+        "name": task_name,
+        "priority": priority
+    }
     tasks.append(task)
-
 
 show_tasks(tasks)
 save_tasks(tasks)
+load_tasks()

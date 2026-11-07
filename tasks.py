@@ -1,8 +1,8 @@
 import json
 
-def  show_tasks(tasks):
+def show_tasks(tasks):
     for task in tasks:
-        print(task)
+        print(task["name"], "-", task["priority"])
 
 
 def  save_tasks(tasks):
@@ -12,6 +12,6 @@ def load_tasks():
     try:
         with open("tasks.json", "r", encoding="utf-8") as file:
             return json.load(file)
-    except FileNotFoundError:
+    except(FileNotFoundError, json.decoder.JSONDecodeError):
         return []
     
