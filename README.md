@@ -11,7 +11,13 @@ A simple task manager built with python
 - save tasks
 - load saved tasks
 - Admin Mode
+- set task priority
 
+## task priority
+each task  can have one of these priority levels;  
+- low
+- medium
+- high
 
 ## Reaquierments
 - python
@@ -44,7 +50,7 @@ python -m pip install -r requierments.txt
 ```
 
 
-## Enviorment setup
+## Enviorment Setup
 
 createa `.env` file in the project folder
 
@@ -61,7 +67,7 @@ admin_passwrod_password_here
 replace `your_password_here` with your own admin password
 
 
-## tun the program
+## Run The Program
 run main file
 
 ```bash
@@ -69,7 +75,7 @@ python main.py
 ```
 
 
-## screenshot
+## Screenshot
 ![Personal_Task_Manager_Screenshot](pics\pic1.png)
 
 ## Demo
