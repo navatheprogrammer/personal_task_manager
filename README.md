@@ -2,7 +2,7 @@
 
 ![Personal_Task_Manager_Badge](https://img.shields.io/badge/python-pink?logo=python&logoColor=white
 )
-A simple task manager built with python for learning git and github
+A simple task manager built with python
 
 
 
