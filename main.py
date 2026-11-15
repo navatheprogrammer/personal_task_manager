@@ -6,7 +6,7 @@ load_dotenv()
 
 
 name = input("enter your name: ")
-print("welcome", name)
+print("welcome back", name)
 
 admin_mod = input("do you want admin mod? yes/no: ")
 if admin_mod == "yes":
